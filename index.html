@@ -1,104 +1,52 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RespiraBem</title>
+  <title>Respira Bem</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Respira Bem</h1>
+    <p>Plataforma educativa para saúde pulmonar</p>
+  </header>
 
-  <nav class="menu">
+  <nav>
     <a href="index.html">Início</a>
-    <a href="paciente.html">Pacientes</a>
+    <a href="pacientes.html">Pacientes</a>
     <a href="quiz.html">Quiz</a>
     <a href="agendamento.html">Agendamento</a>
   </nav>
 
-  <div class="container">
-    <h1>Respira melhor, viva mais</h1>
-    <p>Plataforma educativa para prevenção da DPOC e cuidados com a saúde pulmonar.<br>Recursos especializados para pacientes e profissionais da saúde.</p>
+  <main>
+    <section class="intro">
+      <h2>Bem-vindo!</h2>
+      <p>Explore conteúdos educativos, simuladores e ferramentas para cuidar melhor da sua respiração.</p>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Sou Paciente</h2>
-      <p>Acesse simuladores, artigos educativos, quiz interativo e agende consultas</p>
-      <a href="paciente.html" class="btn">Entrar como Paciente</a>
-    </div>
-  </div>
+      <p>Acesse simuladores, artigos e dicas para viver melhor com saúde pulmonar.</p>
+      <a href="pacientes.html" class="btn">Acesse</a>
+    </section>
 
-</body>
-</html>
+    <section class="section">
+      <h2>Quiz Interativo</h2>
+      <p>Teste seus conhecimentos sobre DPOC e hábitos saudáveis.</p>
+      <a href="quiz.html" class="btn">Começar Quiz</a>
+    </section>
 
+    <section class="section">
+      <h2>Agendamento</h2>
+      <p>Marque consultas e acompanhe seu tratamento.</p>
+      <a href="agendamento.html" class="btn">Agendar</a>
+    </section>
+  </main>
 
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0f8ff;
-      color: #333;
-    }
-    .container {
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      color: #0077b6;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .section {
-      background: #e0f7fa;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .btn {
-      display: inline-block;
-      background: #0077b6;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .nav-buttons {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      background: #caf0f8;
-      padding: 10px 0;
-    }
-    .nav-buttons button {
-      background: #00b4d8;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Respira melhor, viva mais</h1>
-    <p>Plataforma educativa para prevenção da DPOC e cuidados com a saúde pulmonar.<br>Recursos especializados para pacientes e profissionais da saúde.</p>
-
-    <div class="section">
-      <h2>Sou Paciente</h2>
-      <p>Acesse simuladores, artigos educativos, quiz interativo e agende consultas</p>
-      <a href="paciente.html" class="btn">Entrar como Paciente</a>
-    </div>
-  </div>
-
-  <div class="nav-buttons">
-    <button onclick="alert('Chat em breve disponível!')">💬 Bater papo</button>
-    <button onclick="alert('Modo visualização ativado!')">👁️ Visualização</button>
-  </div>
+  <footer>
+    <p>&copy; 2025 Respira Bem. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
