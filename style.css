@@ -1,84 +1,68 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  background: #f0f8ff;
   color: #333;
 }
 
-/* Menu de navegação */
-.menu {
-  background-color: #0077b6;
-  padding: 12px;
+header {
+  background: #0077b6;
+  color: white;
   text-align: center;
-  border-radius: 0 0 8px 8px;
+  padding: 20px;
 }
 
-.menu a {
-  color: #ffffff;
+nav {
+  background: #023e8a;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s ease;
 }
 
-.menu a:hover {
-  color: #90e0ef;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Formulários */
-form {
-  max-width: 400px;
-  margin: auto;
-  background: #ffffff;
+main {
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-label {
-  display: block;
-  margin-top: 10px;
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-input, select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  margin-top: 15px;
-  background-color: #00838f;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Quiz */
-.question {
+.section {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.question h2 {
-  font-size: 18px;
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.options label {
-  display: block;
-  margin: 5px 0;
+.btn:hover {
+  background: #005f8a;
 }
 
-#result {
-  margin-top: 20px;
+footer {
+  background: #023e8a;
+  color: white;
   text-align: center;
-  font-weight: bold;
-  color: #0077b6;
+  padding: 15px;
 }
