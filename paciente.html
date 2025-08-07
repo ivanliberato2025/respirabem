@@ -1,80 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><link rel="stylesheet" href="style.css">
-
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Área do Paciente - RespiraBem</title>
-  <style>
-    body {<nav style="text-align:center; margin-bottom:20px;">
-  <a href="index.html">Início</a> |
-  <a href="paciente.html">Pacientes</a> |
-  <a href="quiz.html">Quiz</a> |
-  <a href="agendamento.html">Agendamento</a>
-</nav>
-
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background: #0077b6;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .section {
-      padding: 20px;
-      border-bottom: 1px solid #eee;
-    }
-    .section h2 {
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-    .btn {
-      display: inline-block;
-      background: #00b4d8;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
+  <title>Pacientes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Área do Paciente</h1>
-    <p>Explore recursos para cuidar da sua saúde pulmonar</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pacientes.html" class="active">Pacientes</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="section">
-    <h2>🧪 Simuladores</h2>
-    <p>Use ferramentas interativas para entender sua função pulmonar e risco de DPOC.</p>
-    <a href="#" class="btn">Acessar Simuladores</a>
-  </div>
+  <main>
+    <section>
+      <h1>Informações para Pacientes</h1>
+      <p>Bem-vindo à área dedicada aos nossos pacientes. Aqui você encontra orientações, dicas de saúde e materiais úteis para sua jornada de cuidado.</p>
+    </section>
 
-  <div class="section">
-    <h2>📚 Artigos Educativos</h2>
-    <p>Leia conteúdos confiáveis sobre prevenção, sintomas e tratamentos da DPOC.</p>
-    <a href="#" class="btn">Ver Artigos</a>
-  </div>
+    <section>
+      <h2>📄 Documentos Importantes</h2>
+      <ul>
+        <li><a href="#">Guia de preparação para consulta</a></li>
+        <li><a href="#">Termo de consentimento</a></li>
+        <li><a href="#">Política de privacidade</a></li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>🧠 Quiz Interativo</h2>
-    <p>Teste seus conhecimentos sobre saúde pulmonar de forma divertida.</p>
-    <a href="quiz.html" class="btn">Iniciar Quiz</a>
-  </div>
+    <section>
+      <h2>💬 Depoimentos</h2>
+      <blockquote>
+        “Fui muito bem atendido, e o processo de agendamento foi super fácil!” — João S.
+      </blockquote>
+      <blockquote>
+        “A consulta foi esclarecedora e me senti acolhida desde o primeiro contato.” — Maria F.
+      </blockquote>
+    </section>
+  </main>
 
-  <div class="section">
-    <h2>📅 Agendar Consulta</h2>
-    <p>Marque uma consulta com um especialista em saúde respiratória.</p>
-    <a href="agendamento.html" class="btn">Agendar Agora</a>
-  </div>
-
+  <footer>
+    <p>&copy; 2025 Ivan Liberato. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
