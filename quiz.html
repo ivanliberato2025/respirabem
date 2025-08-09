@@ -112,3 +112,37 @@
 
 </body>
 </html>
+const questions = [
+  {
+    question: "O que é DPOC?",
+    options: ["Doença pulmonar obstrutiva crônica", "Dor persistente ocular crônica", "Desordem psicológica ocasional"],
+    answer: 0
+  },
+  {
+    question: "Qual sintoma é comum na DPOC?",
+    options: ["Dor de cabeça", "Falta de ar", "Febre alta"],
+    answer: 1
+  }
+];
+
+function loadQuiz() {
+  const container = document.getElementById("quiz-container");
+  questions.forEach((q, i) => {
+    container.innerHTML += `<p>${q.question}</p>`;
+    q.options.forEach((opt, j) => {
+      container.innerHTML += `<label><input type="radio" name="q${i}" value="${j}">${opt}</label><br>`;
+    });
+  });
+}
+
+function submitQuiz() {
+  let score = 0;
+  questions.forEach((q, i) => {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selected && parseInt(selected.value) === q.answer) score++;
+  });
+  document.getElementById("result").textContent = `Você acertou ${score} de ${questions.length}`;
+  localStorage.setItem("quizScore", score);
+}
+
+loadQuiz();
