@@ -1,93 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agendamento RespiraBem</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #e0f7fa;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      margin: 20px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #0077b6;
-      font-weight: bold;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background: #0077b6;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #005f8a;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de Consultas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>📅 Agenda de Consultas</h1>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="paciente.html">Pacientes</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="agendamento.html">Agendamento</a>
-  </nav>
+    <form id="agenda-form">
+      <label>Data:</label>
+      <input type="date" id="data" required />
 
-  <h1>Agendamento</h1>
-  <p>Preencha o formulário abaixo para marcar sua consulta.</p>
+      <label>Horário:</label>
+      <input type="time" id="hora" required />
 
-  <form action="https://formsubmit.co/SEUEMAIL@email.com" method="POST">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+      <label>Motivo:</label>
+      <input type="text" id="motivo" placeholder="Ex: Retorno, avaliação..." required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+      <button type="submit">Agendar</button>
+    </form>
 
-    <label for="data">Data da consulta:</label>
-    <input type="date" id="data" name="data" required>
+    <h2>Consultas Marcadas</h2>
+    <ul id="lista-consultas"></ul>
+  </div>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-    <!-- Proteções extras -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://nliberato2025.github.io/obrigado.html">
-
-    <button type="submit">Agendar</button>
-  </form>
-
+  <script src="agenda.js"></script>
 </body>
 </html>
