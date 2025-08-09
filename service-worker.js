@@ -1,12 +1,16 @@
 self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open("respirabem").then(cache => {
+    caches.open("app-cache").then(cache => {
       return cache.addAll([
         "index.html",
         "style.css",
-        "manifest.json",
-        "icon-192.png",
-        "icon-512.png"
+        "script.js",
+        "quiz.html",
+        "quiz.js",
+        "agenda.html",
+        "agenda.js",
+        "paciente.html",
+        "paciente.js"
       ]);
     })
   );
